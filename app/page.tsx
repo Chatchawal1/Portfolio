@@ -5,8 +5,10 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <div className="grid gap-16">
-      <Hero />
-      <Projects />
+      <div className="grid grid-cols-2 gap-16 items-center">
+        <Hero />
+        <Projects />
+      </div>
       <Contact />
     </div>
   );
