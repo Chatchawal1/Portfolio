@@ -84,7 +84,7 @@ export default function ProjectModal({ project, onClose }: Props) {
                                 rel="noopener noreferrer"
                                 className="px-4 py-2 rounded-xl bg-orange-500 text-white font-medium hover:bg-orange-400 transition-colors"
                             >
-                                🔗 Demo
+                                Demo
                             </a>
                         )}
                         {project.repoUrl && (
@@ -94,7 +94,7 @@ export default function ProjectModal({ project, onClose }: Props) {
                                 rel="noopener noreferrer"
                                 className="px-4 py-2 rounded-xl border border-orange-500/50 text-orange-300 font-medium hover:border-orange-400 hover:text-orange-200 transition-colors"
                             >
-                                💻 Code
+                                Code
                             </a>
                         )}
                     </div>
