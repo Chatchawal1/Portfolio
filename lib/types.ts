@@ -19,6 +19,7 @@ export type Skill = {
 };
 
 export type Profile = {
+  headerName: string;
   name: string;
   role: string;
   summary: string;

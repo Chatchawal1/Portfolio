@@ -1,25 +1,27 @@
 import type { Profile, Project, Skill, SocialLink } from "./types";
 
 export const profile: Profile = {
-  name: "(เปา)Chatchawal Wasinchatchcawal",
-  role: "Frontend Developer",
+  headerName:"Portfolio",
+  name: "Chatchawal Wasinchatchcawal",
+  role: "Developer",
   summary:
-    "นักพัฒนาเว็บที่หลงใหลใน UX/UI และประสิทธิภาพ ชอบสร้างเว็บที่สวย ใช้งานง่าย และเข้าถึงได้",
-  location: "39/21 หมู่ 1 pjvillage, Banrakrad, Bangbo, Samutprakarn 10560 ",
+    "หน้าเว็บแสดงผลงานที่ผ่านมาของผม",
+  location: "39/21 หมู่ 1 PJvillage, Banrakrad, Bangbo, Samutprakarn 10560 ",
   email: "chatchawal.wasin@gmail.com",
   socials: [
     { label: "GitHub", href: "https://github.com/Chatchawal1" },
-    { label: "X", href: "https://x.com/your-username" },
+    { label: "LINE", href: "https://line.me/ti/p/0993947624" },
+    { label: "facrbook", href: "https://www.facebook.com/Powchatchawal" }
   ] satisfies SocialLink[],
 };
 
-export const skills: Skill[] = [
-  { name: "TypeScript", level: "advanced" },
-  { name: "React / Next.js", level: "advanced" },
-  { name: "Tailwind CSS", level: "advanced" },
-  { name: "Node.js", level: "intermediate" },
-  { name: "Testing (Jest, RTL)", level: "intermediate" },
-];
+// export const skills: Skill[] = [
+//   { name: "TypeScript", level: "advanced" },
+//   { name: "React / Next.js", level: "advanced" },
+//   { name: "Tailwind CSS", level: "advanced" },
+//   { name: "Node.js", level: "intermediate" },
+//   { name: "Testing (Jest, RTL)", level: "intermediate" },
+// ];
 
 export const projects: Project[] = [
   {
@@ -29,7 +31,7 @@ export const projects: Project[] = [
       "เว็บพอร์ตโฟลิโอส่วนตัว ออกแบบเรียบหรู รองรับ Dark Mode และเข้าถึงได้",
     tags: ["Next.js", "Tailwind", "TypeScript"],
     image: "/images/portfolio.png",
-    repoUrl: "https://github.com/your-username/portfolio",
+    repoUrl: "https://github.com/Chatchawal1/Portfolio",
     demoUrl: "https://your-portfolio.vercel.app",
   },
   {
@@ -46,4 +48,5 @@ export const projects: Project[] = [
     tags: ["Next.js", "Stripe (mock)", "Zustand"],
     image: "/images/shop.png",
   },
+  
 ];
