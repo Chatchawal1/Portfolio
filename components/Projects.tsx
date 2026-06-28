@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -16,26 +16,24 @@ import "swiper/css/pagination";
 
 export default function Projects() {
   return (
-    <Section id="work" title="ผลงาน">
+    <Section id="work">
       <Swiper
         effect="coverflow"
         centeredSlides
         grabCursor
         slidesPerView={"auto"}
-        loop
-        navigation
         pagination={{
           clickable: true,
         }}
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
-          depth: 220,
+          stretch: 100,
+          depth: 250,
           modifier: 2,
-          scale: 0.82,
+          scale: 0.90,
           slideShadows: false,
         }}
-        modules={[EffectCoverflow, Navigation, Pagination]}
+        modules={[EffectCoverflow, Pagination]}
         className="py-10"
       >
         {projects.map((project) => (
