@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
@@ -21,7 +20,9 @@ export const metadata: Metadata = {
   },
   description:
     "พอร์ตโฟลิโอแสดงผลงานและทักษะด้าน Frontend/Next.js ออกแบบเรียบหรู ใช้งานง่าย",
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: "/favicon.ico",
+  },
   metadataBase: new URL("https://example.com"),
   openGraph: {
     title: "Portfolio | โป้ Kuhakan",
@@ -32,7 +33,9 @@ export const metadata: Metadata = {
     locale: "th_TH",
     type: "website",
   },
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -42,9 +45,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="th">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* <Header /> */}
-        <main className="max-w-5xl px-4 py-8 sm:py-12">{children}</main>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+      >
+        <main className="w-full px-6 py-8 sm:py-12">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
