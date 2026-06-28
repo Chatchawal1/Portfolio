@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className="text-3xl font-semibold tracking-tight break-words sm:text-5xl lg:text-6xl">
             {profile.name}
           </h1>
-          <p className="mt-2 text-lg text-foreground/80 sm:text-xl">{profile.role}</p>
+          <p className="mt-2 text-lg text-foreground/200 sm:text-xl">{profile.role}</p>
         </div>
         <p className="max-w-2xl text-foreground/80 xl:max-w-3xl">{profile.summary}</p>
       </div>

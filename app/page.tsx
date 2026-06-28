@@ -10,7 +10,7 @@ export default function Home() {
         <div className="min-w-0 flex-1">
           <Hero />
         </div>
-        <div className="min-w-0 flex-1 mt-10 sm:mt-14 @[48rem]:mt-20 @[48rem]:flex @[48rem]:justify-end">
+        <div className="mx-auto mt-10 w-full min-w-0 flex-1 sm:mt-14 @[48rem]:mt-20">
           <Projects />
         </div>
       </div>

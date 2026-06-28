@@ -1,12 +1,12 @@
 import type { Profile, Project, Skill, SocialLink } from "./types";
 
 export const profile: Profile = {
-  headerName:"Portfolio",
-  name: "Chatchawal Wasinchatchcawal",
+  headerName: "Portfolio",
+  name: "Chatchawal Wasinchatchawal",
   role: "Developer",
   summary:
-    "หน้าเว็บแสดงผลงานที่ผ่านมาของผม",
-  location: "39/21 หมู่ 1 PJvillage, Banrakrad, Bangbo, Samutprakarn 10560 ",
+    "จบการศึกษาระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศและดิจิทัล จากสถาบันการจัดการปัญญาภิวัฒน์ (2565) มีประสบการณ์การทำงานจริง มีความรู้และสกิลหลากหลายทั้ง Frontend และ Backend รวมถึง Database SQL และ การ Test ทั้ง Manual และ Automate ชื่นชอบการพัฒนาเว็บแอปพลิเคชัน พร้อมเรียนรู้และพัฒนาทักษะใหม่ๆเสมอ",
+  location: "39/21 หมู่ 1 PJvillage, Banrakrad, Bangbo, Samutprakarn, 10560, Tel.061-428-2968",
   email: "chatchawal.wasin@gmail.com",
   socials: [
     { label: "GitHub", href: "https://github.com/Chatchawal1" },
@@ -28,9 +28,9 @@ export const projects: Project[] = [
     id: "portfolio",
     title: "Personal Portfolio",
     description:
-      "เว็บพอร์ตโฟลิโอส่วนตัว ออกแบบเรียบหรู รองรับ Dark Mode และเข้าถึงได้",
+      "เว็บพอร์ตโฟลิโอส่วนตัว แนะนำตัวและผลงาน รวมถึงบอกช่องทางการติดต่อ",
     tags: ["Next.js", "Tailwind", "TypeScript"],
-    image: "/images/portfolio.png",
+    image: "/Image/Portfolio.png",
     repoUrl: "https://github.com/Chatchawal1/Portfolio",
     demoUrl: "https://your-portfolio.vercel.app",
   },
@@ -48,5 +48,5 @@ export const projects: Project[] = [
     tags: ["Next.js", "Stripe (mock)", "Zustand"],
     image: "/images/shop.png",
   },
-  
+
 ];
