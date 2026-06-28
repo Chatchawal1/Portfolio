@@ -1,4 +1,3 @@
-import { Collapse } from 'antd';
 import Section from './Section';
 import { profile } from '@/lib/data';
 

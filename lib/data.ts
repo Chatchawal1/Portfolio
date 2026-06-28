@@ -1,4 +1,4 @@
-import type { Profile, Project, Skill, SocialLink } from "./types";
+import type { Profile, Project, SocialLink } from "./types";
 
 export const profile: Profile = {
   headerName: "Portfolio",
@@ -32,7 +32,6 @@ export const projects: Project[] = [
     tags: ["Next.js", "Tailwind", "TypeScript"],
     image: "/Image/Portfolio.png",
     repoUrl: "https://github.com/Chatchawal1/Portfolio",
-    demoUrl: "https://your-portfolio.vercel.app",
   },
   {
     id: "dashboard",
