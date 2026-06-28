@@ -17,30 +17,31 @@ import "swiper/css/pagination";
 export default function Projects() {
   return (
     <Section id="work">
-      <Swiper
-        effect="coverflow"
-        centeredSlides
-        grabCursor
-        slidesPerView={"auto"}
-        pagination={{
-          clickable: true,
-        }}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 100,
-          depth: 250,
-          modifier: 2,
-          scale: 0.90,
-          slideShadows: false,
-        }}
-        modules={[EffectCoverflow, Pagination]}
-        className="py-10"
-      >
-        {projects.map((project) => (
-          <SwiperSlide
-            key={project.id}
-            className="!w-[340px] sm:!w-[420px] lg:!w-[500px]"
-          >
+      <div className="w-full min-w-0 overflow-hidden">
+        <Swiper
+          effect="coverflow"
+          centeredSlides
+          grabCursor
+          slidesPerView="auto"
+          pagination={{
+            clickable: true,
+          }}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 40,
+            depth: 120,
+            modifier: 1.5,
+            scale: 0.92,
+            slideShadows: false,
+          }}
+          modules={[EffectCoverflow, Pagination]}
+          className="py-10"
+        >
+          {projects.map((project) => (
+            <SwiperSlide
+              key={project.id}
+              className="!w-[min(100%,320px)] sm:!w-[min(100%,400px)] lg:!w-[min(100%,460px)] xl:!w-[min(100%,520px)]"
+            >
             <Card
               className="
                 group
@@ -119,8 +120,9 @@ export default function Projects() {
               </CardContent>
             </Card>
           </SwiperSlide>
-        ))}
-      </Swiper>
+          ))}
+        </Swiper>
+      </div>
     </Section>
   );
 }

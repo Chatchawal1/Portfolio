@@ -5,10 +5,12 @@ import Contact from "@/components/Contact";
 // page.tsx
 export default function Home() {
   return (
-    <div className="grid gap-16">
-      <div className="flex flex-col lg:flex-row gap-16 items-center">
-        <Hero />  {/* flex-1 อยู่ใน Section แล้ว */}
-        <div className="flex-1 w-full">
+    <div className="@container flex min-h-full w-full min-w-0 flex-1 flex-col">
+      <div className="flex min-w-0 flex-1 flex-col gap-12 @[48rem]:flex-row @[48rem]:items-start @[48rem]:justify-between @[48rem]:gap-16 xl:gap-24">
+        <div className="min-w-0 flex-1">
+          <Hero />
+        </div>
+        <div className="min-w-0 flex-1 mt-10 sm:mt-14 @[48rem]:mt-20 @[48rem]:flex @[48rem]:justify-end">
           <Projects />
         </div>
       </div>

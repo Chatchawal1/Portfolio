@@ -7,7 +7,7 @@ type SectionProps = {
 
 export default function Section({ id, title, children, className }: SectionProps) {
   return (
-    <section id={id} className={`mx-auto max-w-5xl px-4 ${className ?? ""}`}>
+    <section id={id} className={`w-full min-w-0 ${className ?? ""}`}>
       {title ? (
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-6" aria-label={title}>
           {title}

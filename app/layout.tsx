@@ -46,9 +46,9 @@ export default function RootLayout({
   return (
     <html lang="th">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen flex-col font-sans antialiased`}
       >
-        <main className="w-full px-6 py-8 sm:py-12">
+        <main className="flex w-full min-w-0 flex-1 flex-col overflow-x-clip px-8 py-8 sm:px-12 sm:py-12 lg:px-16 xl:px-20 2xl:px-24">
           {children}
         </main>
         <Footer />

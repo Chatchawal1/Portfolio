@@ -15,8 +15,13 @@
   --foreground: #ededed;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   min-height: 100vh;
+  overflow-x: clip;
   background: linear-gradient(160deg,
       #000000,
       #1c1917,
@@ -27,6 +32,8 @@ body {
 
 .swiper {
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   padding-top: 30px;
   padding-bottom: 50px;
 }

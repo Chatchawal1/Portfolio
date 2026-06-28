@@ -5,10 +5,10 @@ import { SocialIcon } from "./ui/SocialIcon";
 
 export default function Contact() {
     return (
-        <Section id="contact" title="ติดต่อ" className="mt-16">
-            <div className="grid gap-4 sm:flex sm:items-center sm:justify-between">
-                <p className="text-foreground/80">{profile.location}</p>
-                <div className="flex gap-3">
+        <Section id="contact" title="ติดต่อ" className="mt-auto pt-16 sm:pt-20">
+            <div className="grid min-w-0 gap-4 sm:flex sm:items-center sm:justify-between">
+                <p className="min-w-0 break-words text-foreground/80">{profile.location}</p>
+                <div className="flex shrink-0 flex-wrap gap-3">
                     {profile.email ? (
                         <Button asChild size="icon" className="
             group
