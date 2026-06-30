@@ -15,20 +15,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Portfolio | โป้ Kuhakan",
-    template: "%s | โป้ Kuhakan",
+    default: "Portfolio | Chatchawal",
+    template: "%s | Chatchawal",
   },
   description:
-    "พอร์ตโฟลิโอแสดงผลงานและทักษะด้าน Frontend/Next.js ออกแบบเรียบหรู ใช้งานง่าย",
+    "พอร์ตโฟลิโอแสดงผลงานและทักษะด้าน IT ออกแบบโดยคำนึงถึงการใช้งานง่าย",
   icons: {
     icon: "/favicon.ico",
   },
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://portfolio-sage-five-61.vercel.app/"),
   openGraph: {
-    title: "Portfolio | โป้ Kuhakan",
+    title: "Portfolio | Chatchawal",
     description:
-      "พอร์ตโฟลิโอแสดงผลงานและทักษะด้าน Frontend/Next.js ออกแบบเรียบหรู ใช้งานง่าย",
-    url: "https://example.com",
+      "พอร์ตโฟลิโอแสดงผลงานและทักษะด้าน IT ออกแบบโดยคำนึงถึงการใช้งานง่าย",
+    url: "https://portfolio-sage-five-61.vercel.app/",
     siteName: "Portfolio",
     locale: "th_TH",
     type: "website",

@@ -3,15 +3,16 @@ export type SocialLink = {
   href: string;
 };
 
-export type Project = {
+export interface Project {
   id: string;
   title: string;
   description: string;
   tags: string[];
-  image?: string;
-  repoUrl?: string;
+  image?: string;       
+  images?: string[];    
   demoUrl?: string;
-};
+  repoUrl?: string;
+}
 
 export type Skill = {
   name: string;

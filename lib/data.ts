@@ -29,23 +29,19 @@ export const projects: Project[] = [
     title: "Personal Portfolio",
     description:
       "เว็บพอร์ตโฟลิโอส่วนตัว แนะนำตัวและผลงาน รวมถึงบอกช่องทางการติดต่อ",
-    tags: ["Next.js", "Tailwind", "TypeScript"],
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Swiper"],
     image: "/Image/Portfolio.png",
+    images: [
+      "/Image/Portfolio.png",
+      "/Image/Portfolio2.png",
+    ],
     repoUrl: "https://github.com/Chatchawal1/Portfolio",
   },
   {
-    id: "dashboard",
-    title: "Analytics Dashboard",
-    description: "แดชบอร์ดแสดงข้อมูลแบบเรียลไทม์ พร้อมกราฟและตาราง",
-    tags: ["React", "Chart.js", "API"],
-    image: "/images/dashboard.png",
+    id: "Coming Soon",
+    title: "Coming Soon",
+    description: "Coming Soon",
+    tags: [],
+    image: "/Image/coming-soon.jpg",
   },
-  {
-    id: "shop",
-    title: "Mini Shop",
-    description: "เว็บขายสินค้าขนาดเล็ก พร้อมตะกร้าสินค้าและชำระเงินจำลอง",
-    tags: ["Next.js", "Stripe (mock)", "Zustand"],
-    image: "/images/shop.png",
-  },
-
 ];

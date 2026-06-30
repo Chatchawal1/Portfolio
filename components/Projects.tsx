@@ -51,19 +51,20 @@ export default function Projects() {
               className="!w-[min(100%,320px)] sm:!w-[min(100%,400px)] lg:!w-[min(100%,460px)] xl:!w-[min(100%,520px)]"
             >
               <Card
-                onClick={() => setSelected(project)} // ← เพิ่มตรงนี้
+                onClick={() => setSelected(project)}
                 className="
                   group cursor-pointer
+                  min-h-[420px]
                   overflow-hidden rounded-3xl
                   border border-orange-500/30
                   bg-black/30 backdrop-blur-md
                   transition-all duration-300
                   hover:border-orange-400
                   hover:shadow-[0_0_30px_rgba(249,115,22,.35)]
-                "
+                  "
               >
                 {project.image && project.image.startsWith("/") && (
-                  <div className="relative aspect-video overflow-hidden">
+                  <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -80,16 +81,6 @@ export default function Projects() {
 
                 <CardContent>
                   <p className="text-sm text-foreground/80">{project.description}</p>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <Badge
-                        key={tag}
-                        className="bg-orange-500/15 text-orange-300 border border-orange-500/40"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
                 </CardContent>
               </Card>
             </SwiperSlide>
