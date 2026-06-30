@@ -5,7 +5,7 @@ export const profile: Profile = {
   name: "Chatchawal Wasinchatchawal",
   role: "Developer",
   summary:
-    "จบการศึกษาระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศและดิจิทัล จากสถาบันการจัดการปัญญาภิวัฒน์ (2565) มีประสบการณ์การทำงานจริง มีความรู้และสกิลหลากหลายทั้ง Frontend และ Backend รวมถึง Database SQL และ การ Test ทั้ง Manual และ Automate ชื่นชอบการพัฒนาเว็บแอปพลิเคชัน พร้อมเรียนรู้และพัฒนาทักษะใหม่ๆเสมอ",
+    "จบการศึกษาระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศและดิจิทัล จากสถาบันการจัดการปัญญาภิวัฒน์ (2025) มีประสบการณ์การทำงานจริง มีความรู้และสกิลหลากหลายทั้ง Frontend และ Backend รวมถึง Database SQL และ การ Test ทั้ง Manual และ Automate ชื่นชอบการพัฒนาเว็บแอปพลิเคชัน พร้อมเรียนรู้และพัฒนาทักษะใหม่ๆเสมอ",
   location: "39/21 หมู่ 1 PJvillage, Banrakrad, Bangbo, Samutprakarn, 10560, Tel.061-428-2968",
   email: "chatchawal.wasin@gmail.com",
   socials: [
